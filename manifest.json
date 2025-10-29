@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Copyleaks AI Detector",
+    "version": "1.0",
+    "description": "Checks selected text for AI-generated content using the Copyleaks API.",
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "permissions": [
+      "contextMenus",
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://id.copyleaks.com/",
+      "https://api.copyleaks.com/"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_title": "Copyleaks AI Detector",
+      "default_popup": "popup.html"
+    }
+  }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Detector</title>
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h3 class="header">Copyleaks AI Detector</h3>
+        
+        <textarea id="scan-text-input" placeholder="Paste or type text here to scan for AI content."></textarea>
+        
+        <div id="status-area">
+            <p id="status-message">Ready to scan. Paste text above or select it on the page.</p>
+        </div>
+        
+        <div id="results-area" class="hidden">
+            <div class="result-bar-container">
+                <div id="ai-bar" class="result-bar ai-bg"></div>
+                <div id="human-bar" class="result-bar human-bg"></div>
+            </div>
+            <div class="scores-container">
+                <div class="score-item">
+                    <span class="score-label ai-text">AI Score:</span>
+                    <span id="ai-score" class="score-value">0%</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label human-text">Human Score:</span>
+                    <span id="human-score" class="score-value">0%</span>
+                </div>
+            </div>
+        </div>
+        
+        <button id="scan-button" class="btn">Scan Text</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
